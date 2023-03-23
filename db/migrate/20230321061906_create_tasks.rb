@@ -4,7 +4,6 @@ class CreateTasks < ActiveRecord::Migration[7.0]
       t.string :title
       t.text :details
       t.boolean :completed, false
-      change_column_default :tasks, :completed, false
 
       t.timestamps
     end
